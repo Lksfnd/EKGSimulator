@@ -22,9 +22,17 @@ class EKGFunction {
             d_I: ISO0,
             d_II: x=>Math.sin(x/10)*25,
             d_III: x=>Math.cos(x/10)*25,
-            d_aVR: x=>Math.tan(x/10),
-            d_aVL: ISO0,
-            d_aVF: ISO0,
+            d_aVR: x=>Math.tan(x/10)*0.6,
+            d_aVL: x=>Math.sin(x/1)*25*Math.random(),
+            d_aVF: x => {
+                if( x % 100 === 0) {
+                    return 25;
+                }
+                if( x % 101 === 0) {
+                    return -25;
+                }
+                return 0;
+            },
             d_V1: ISO0,
             d_V2: ISO0,
             d_V3: ISO0,

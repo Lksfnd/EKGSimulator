@@ -18,7 +18,7 @@ class EKGPanel {
     constructor( target, ekgFunction ) {
         this._target = target;
         this.renderFunc = () => {return 0};
-        this.fps = 60;
+        this.fps = 100;
         this.ekgFunction = ekgFunction;
         
         // Create canvas
