@@ -8,7 +8,8 @@ const Color = {
 const Config = {
     SmallBoxScale: 5,
     LargeBoxScale: 5*5,
-    PaddingX: 25,
+    PaddingX: 35,
+    TextPaddingX: 5,
     TextMarginTop: 25
 };
 
@@ -139,20 +140,20 @@ class EKGPanel {
         ctx.fillStyle = 'black';
         ctx.font = "bold 18px Old Standard TT";
 
-        ctx.fillText("I", Config.PaddingX, this._getLineBaseY(0) + Config.TextMarginTop);
-        ctx.fillText("II", Config.PaddingX, this._getLineBaseY(1) + Config.TextMarginTop);
-        ctx.fillText("III", Config.PaddingX, this._getLineBaseY(2) + Config.TextMarginTop);
+        ctx.fillText("I", Config.TextPaddingX, this._getLineBaseY(0) + Config.TextMarginTop);
+        ctx.fillText("II", Config.TextPaddingX, this._getLineBaseY(1) + Config.TextMarginTop);
+        ctx.fillText("III", Config.TextPaddingX, this._getLineBaseY(2) + Config.TextMarginTop);
 
-        ctx.fillText("aVR", Config.PaddingX, this._getLineBaseY(3) + Config.TextMarginTop);
-        ctx.fillText("aVL", Config.PaddingX, this._getLineBaseY(4) + Config.TextMarginTop);
-        ctx.fillText("aVF", Config.PaddingX, this._getLineBaseY(5) + Config.TextMarginTop);
+        ctx.fillText("aVR", Config.TextPaddingX, this._getLineBaseY(3) + Config.TextMarginTop);
+        ctx.fillText("aVL", Config.TextPaddingX, this._getLineBaseY(4) + Config.TextMarginTop);
+        ctx.fillText("aVF", Config.TextPaddingX, this._getLineBaseY(5) + Config.TextMarginTop);
 
-        ctx.fillText("V1", canvas.width*0.5 + Config.PaddingX, this._getLineBaseY(0) + Config.TextMarginTop);
-        ctx.fillText("V2", canvas.width*0.5 + Config.PaddingX, this._getLineBaseY(1) + Config.TextMarginTop);
-        ctx.fillText("V3", canvas.width*0.5 + Config.PaddingX, this._getLineBaseY(2) + Config.TextMarginTop);
-        ctx.fillText("V4", canvas.width*0.5 + Config.PaddingX, this._getLineBaseY(3) + Config.TextMarginTop);
-        ctx.fillText("V5", canvas.width*0.5 + Config.PaddingX, this._getLineBaseY(4) + Config.TextMarginTop);
-        ctx.fillText("V6", canvas.width*0.5 + Config.PaddingX, this._getLineBaseY(5) + Config.TextMarginTop);
+        ctx.fillText("V1", canvas.width*0.5 + Config.TextPaddingX, this._getLineBaseY(0) + Config.TextMarginTop);
+        ctx.fillText("V2", canvas.width*0.5 + Config.TextPaddingX, this._getLineBaseY(1) + Config.TextMarginTop);
+        ctx.fillText("V3", canvas.width*0.5 + Config.TextPaddingX, this._getLineBaseY(2) + Config.TextMarginTop);
+        ctx.fillText("V4", canvas.width*0.5 + Config.TextPaddingX, this._getLineBaseY(3) + Config.TextMarginTop);
+        ctx.fillText("V5", canvas.width*0.5 + Config.TextPaddingX, this._getLineBaseY(4) + Config.TextMarginTop);
+        ctx.fillText("V6", canvas.width*0.5 + Config.TextPaddingX, this._getLineBaseY(5) + Config.TextMarginTop);
     }
 
     render() {
